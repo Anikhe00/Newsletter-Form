@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+
+  --color-blue-800: #242742;
+  --color-blue-700: #36384d;
+
+  --color-red: #ff6155;
+
+  --color-grey: #949494;
+
+  --background-brand-gradient: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+}
