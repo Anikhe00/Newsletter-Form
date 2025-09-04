@@ -11,8 +11,8 @@ export default function NewsletterForm() {
           alt="Newsletter Illustration"
           className="w-full lg:w-[25rem] h-[17.75rem] md:h-[22.39288rem] lg:h-full md:rounded-[1rem] rounded-b-[1rem] object-cover "
         />
-        <div className="flex flex-col items-start gap-[2.5em] md:gap-[1.5rem] md:self-stretch lg:h-fit px-[1.5rem] lg:px-0">
-          <div className="flex flex-col items-start gap-[1.5rem]">
+        <div className="flex flex-col items-start gap-[2.5em] md:gap-[1.5rem] lg:gap-[2rem] md:self-stretch lg:h-full lg:justify-center px-[1.5rem] lg:px-0">
+          <div className="flex flex-col items-start gap-[1.5rem] lg:gap-[2rem]">
             <h1 className="text-[2.5rem] md:text-[3.5rem] font-bold leading-[100%] text-blue-800">
               Stay updated!
             </h1>
