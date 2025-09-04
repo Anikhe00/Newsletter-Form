@@ -2,7 +2,13 @@ import List from "./List";
 import Form from "./Form";
 import Illustration from "../assets/newsletter-illustration.png";
 
-export default function NewsletterForm({ onChange, value, onSubmit }) {
+export default function NewsletterForm({
+  onChange,
+  value,
+  onSubmit,
+  valid,
+  hasSubmitted,
+}) {
   return (
     <section className="flex w-full md:w-[38rem] lg:w-[56.5rem] md:h-[54.875rem] lg:h-[40.063rem] md:p-[2.5rem] h-dvh md:rounded-[2.25rem] md:bg-white md:shadow-[0_15px_60px_0_rgba(0,0,0,0.25)]">
       <div className="flex flex-col lg:flex-row-reverse w-full items-center lg:items-center lg:justify-center gap-[2.5rem] ">
@@ -25,7 +31,13 @@ export default function NewsletterForm({ onChange, value, onSubmit }) {
               <List>And much more!</List>
             </ul>
           </div>
-          <Form onChange={onChange} value={value} onSubmit={onSubmit}></Form>
+          <Form
+            onChange={onChange}
+            value={value}
+            onSubmit={onSubmit}
+            valid={valid}
+            hasSubmitted={hasSubmitted}
+          ></Form>
         </div>
       </div>
     </section>

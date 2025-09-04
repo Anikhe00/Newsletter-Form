@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function App() {
   const [isValue, setIsValue] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
 
   function handleChange(e) {
     setIsValue(e.target.value);
@@ -17,6 +18,8 @@ export default function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    setHasSubmitted(true);
+
     if (!validateEmail(isValue)) {
       return;
     }
@@ -30,6 +33,8 @@ export default function App() {
           onChange={handleChange}
           value={isValue}
           onSubmit={handleSubmit}
+          valid={validateEmail(isValue)}
+          hasSubmitted={hasSubmitted}
         ></NewsletterForm>
       ) : (
         <Modal value={isValue} />
