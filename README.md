@@ -1,12 +1,132 @@
-# React + Vite
+# Newsletter Sign-Up Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, interactive newsletter sign-up form built with **React** and **TailwindCSS**. Users can enter their email address, see real-time validation, and receive a success confirmation message.
 
-Currently, two official plugins are available:
+This project is a solution to the [Frontend Mentor Newsletter Sign-Up Form Challenge](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 The Challenge
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users should be able to:
+
+- Enter their email address and submit the form.
+- See a success message with their email after submitting.
+- View form validation messages if:
+  - The field is empty.
+  - The email address is not correctly formatted.
+- Experience responsive layouts optimized for any device.
+- See hover and focus states for interactive elements.
+
+---
+
+## ✨ Features
+
+- ✅ Email input with real-time validation
+- ✅ Error messages for empty/invalid emails
+- ✅ Success screen displaying user’s submitted email
+- ✅ Fully responsive layout for mobile & desktop
+- ✅ Smooth hover/focus states for improved UX
+
+---
+
+## 🚀 Demo
+
+- **Live Site:** [Newsletter Form on Vercel](https://newsletter-form-tau.vercel.app/)
+- **Solution:** [Frontend Mentor Submission](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-3FC1AZbNrv)
+
+![Desktop View](./public/Desktop-1440x1024.png)
+
+![Mobile View](./public/Mobile-375x667.png)
+
+![Tablet View](./public/Tablet-768x1024.png)
+
+---
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- JavaScript (ES6+)
+- [Vite](https://vitejs.dev/)
+
+---
+
+## 📂 Project Structure
+
+```bash
+Newsletter-Form/
+│── public/           # Static assets
+│── src/
+│   ├── components/   # Reusable UI components
+│   ├── App.jsx       # Main app container
+│   ├── index.css     # Tailwind base styles
+│   └── main.jsx      # Entry point
+│── package.json
+│── tailwind.config.js
+│── vite.config.js
+└── README.md
+```
+
+## 🧑‍💻 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Anikhe00/newsletter-form.git
+   cd newsletter-form
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+   The app will be available at `http://localhost:3000`.
+
+---
+
+## Learning Objectives
+
+Through this project, I learned how to:
+
+- Handle form state and validation using React state.
+- Implement conditional rendering for success and error states.
+- Apply responsive design principles using TailwindCSS.
+- Create a smooth user experience with hover and focus states.
+
+---
+
+## Future Improvements
+
+- Add server-side validation for email submissions.
+- Implement a subscription backend to store user emails.
+- Add a newsletter sign-up confirmation email.
+- Enhance accessibility features.
+
+---
+
+## Author
+
+- **Name** - Shakirat Akanji
+- **Github** - [Anikhe00](https://github.com/Anikhe00)
+- **LinkedIn** - [Shakirat Akanji](https://www.linkedin.com/in/shakirat-akanji/)
+- **Frontend Mentor** - [Anikhe00](https://www.frontendmentor.io/profile/Anikhe00)
