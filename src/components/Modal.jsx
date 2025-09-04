@@ -1,7 +1,7 @@
 import Button from "./Button";
 import Checkmark from "../assets/check.svg";
 
-export default function Modal({ value }) {
+export default function Modal({ value, onDismiss }) {
   return (
     <div className="flex flex-col justify-end items-center bg-white px-[1.5rem] pt-[9.31rem] pb-[4.38rem] h-dvh lg:w-[31.5rem] md:w-[31.5rem] lg:h-[32.5rem] md:h-[32.5rem] lg:p-[4rem] md:p-[4rem] lg:rounded-[2.25rem] md:rounded-[2.25rem] ">
       <div className="flex flex-col justify-between lg:justify-center md:justify-center lg:gap-[2rem] md:gap-[2rem] h-dvh w-full items-start">
@@ -19,7 +19,7 @@ export default function Modal({ value }) {
           </p>
         </div>
 
-        <Button>Dismiss message</Button>
+        <Button handleClick={onDismiss}>Dismiss message</Button>
       </div>
     </div>
   );

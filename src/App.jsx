@@ -26,6 +26,12 @@ export default function App() {
     setIsSubscribed(true);
   }
 
+  function handleDismiss() {
+    setHasSubmitted(false);
+    setIsSubscribed(false);
+    setIsValue("");
+  }
+
   return (
     <main className="w-full h-dvh md:min-h-dvh lg:min-h-dvh flex pb-[2.75rem] items-center flex-col lg:justify-center md:justify-center lg:bg-blue-700 md:bg-blue-700 bg-white">
       {isSubscribed === false ? (
@@ -37,7 +43,7 @@ export default function App() {
           hasSubmitted={hasSubmitted}
         ></NewsletterForm>
       ) : (
-        <Modal value={isValue} />
+        <Modal value={isValue} onDismiss={handleDismiss} />
       )}
     </main>
   );
