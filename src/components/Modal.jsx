@@ -1,7 +1,7 @@
 import Button from "./Button";
 import Checkmark from "../assets/check.svg";
 
-export default function Modal() {
+export default function Modal({ value }) {
   return (
     <div className="flex flex-col justify-end items-center bg-white px-[1.5rem] pt-[9.31rem] pb-[4.38rem] h-dvh lg:w-[31.5rem] md:w-[31.5rem] lg:h-[32.5rem] md:h-[32.5rem] lg:p-[4rem] md:p-[4rem] lg:rounded-[2.25rem] md:rounded-[2.25rem] ">
       <div className="flex flex-col justify-between lg:justify-center md:justify-center lg:gap-[2rem] md:gap-[2rem] h-dvh w-full items-start">
@@ -13,9 +13,9 @@ export default function Modal() {
           </h1>
 
           <p className="text-[1rem] font-normal leading-[150%] text-blue-800">
-            A confirmation email has been sent to{" "}
-            <strong>ash@loremcompany.com</strong>. Please open it and click the
-            button inside to confirm your subscription.
+            A confirmation email has been sent to <strong>{value}</strong>.
+            Please open it and click the button inside to confirm your
+            subscription.
           </p>
         </div>
 

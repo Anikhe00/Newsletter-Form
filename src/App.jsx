@@ -32,7 +32,7 @@ export default function App() {
           onSubmit={handleSubmit}
         ></NewsletterForm>
       ) : (
-        <Modal />
+        <Modal value={isValue} />
       )}
     </main>
   );
