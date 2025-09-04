@@ -33,7 +33,7 @@ export default function App() {
   }
 
   return (
-    <main className="w-full h-dvh md:min-h-dvh lg:min-h-dvh flex pb-[2.75rem] items-center flex-col lg:justify-center md:justify-center lg:bg-blue-700 md:bg-blue-700 bg-white">
+    <main className="w-full h-dvh md:min-h-dvh lg:min-h-dvh flex pb-[2.75rem] items-center flex-col lg:justify-center md:justify-center lg:bg-blue-700 md:bg-blue-700 gap-[1rem] bg-white">
       {isSubscribed === false ? (
         <NewsletterForm
           onChange={handleChange}
@@ -45,6 +45,11 @@ export default function App() {
       ) : (
         <Modal value={isValue} onDismiss={handleDismiss} />
       )}
+
+      <p className="text-[0.75rem] font-medium leading-[150%] text-center md:text-white lg:text-white text-blue-800 ">
+        Built with ❤️ & 🔦 by{" "}
+        <a href="https://github.com/Anikhe00">Shakirat Akanji</a>.
+      </p>
     </main>
   );
 }
