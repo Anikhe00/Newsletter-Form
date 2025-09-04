@@ -1,4 +1,4 @@
-export default function EmailField({ valid, value }) {
+export default function EmailField({ valid, value, onChange }) {
   return (
     <div className="flex flex-col items-start gap-[0.5rem] w-full">
       <div className="flex justify-between items-start self-stretch">
@@ -16,6 +16,7 @@ export default function EmailField({ valid, value }) {
       </div>
       <input
         value={value}
+        onChange={onChange}
         type="email"
         id="email"
         placeholder="email@company.com"
