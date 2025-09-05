@@ -37,9 +37,9 @@ Users should be able to:
 
 ![Desktop View](./public/Desktop-1440x1024.png)
 
-![Mobile View](./public/Mobile-375x667.png)
+![Mobile View](./public/iPhone-14-Pro-393x852.png)
 
-![Tablet View](./public/Tablet-768x1024.png)
+![Tablet View](./public/iPad-Pro-768x1024.png)
 
 ---
 
